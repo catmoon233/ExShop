@@ -1,0 +1,13 @@
+{
+  "replace": "false",
+  "values": [
+    "minecraft:air",
+    "ex_shop:leather_money_bag",
+    "ex_shop:iron_money_bag",
+    "ex_shop:golden_money_bag",
+    "ex_shop:diamond_money_bag",
+    "ex_shop:end_money_bag",
+    "ex_shop:ender_money_bag",
+    "ex_shop:emerald_money_bag"
+  ]
+}

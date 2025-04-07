@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "ex_shop:item/emerald_coin"
+  }
+}

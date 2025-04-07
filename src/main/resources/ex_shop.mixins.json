@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.exmo.ex_shop.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "ex_shop.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

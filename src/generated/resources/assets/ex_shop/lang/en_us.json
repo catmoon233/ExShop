@@ -1,0 +1,20 @@
+{
+  "curios.identifier.money_bag": "Money Bag",
+  "ex_shop.overlay.get_money": "get money %s",
+  "ex_shop.reason.none": "no reason",
+  "item.ex_shop.copper_coin": "copper coin",
+  "item.ex_shop.diamond_coin": "diamond coin",
+  "item.ex_shop.diamond_money_bag": "diamond money bag",
+  "item.ex_shop.emerald_coin": "emerald coin",
+  "item.ex_shop.end_money_bag": "end money bag",
+  "item.ex_shop.ender_coin": "ender coin",
+  "item.ex_shop.ender_money_bag": "ender money bag",
+  "item.ex_shop.golden_coin": "golden coin",
+  "item.ex_shop.golden_money_bag": "gold money bag",
+  "item.ex_shop.iron_coin": "iron coin",
+  "item.ex_shop.iron_money_bag": "iron money bag",
+  "item.ex_shop.leather_money_bag": "leather money bag",
+  "item.ex_shop.nether_star_coin": "nether star coin",
+  "itemGroup.ex_shop_tab": "exmo shop",
+  "tooltip.ex_shop.money_item.value": "§eValue: %s"
+}

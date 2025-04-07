@@ -1,0 +1,20 @@
+{
+  "curios.identifier.money_bag": "钱包",
+  "ex_shop.overlay.get_money": "获得 %s 金币",
+  "ex_shop.reason.none": "无原因",
+  "item.ex_shop.copper_coin": "铜币",
+  "item.ex_shop.diamond_coin": "钻石币",
+  "item.ex_shop.diamond_money_bag": "钻石钱包",
+  "item.ex_shop.emerald_coin": "绿宝石币",
+  "item.ex_shop.end_money_bag": "终极钱包",
+  "item.ex_shop.ender_coin": "末影币",
+  "item.ex_shop.ender_money_bag": "末影钱包",
+  "item.ex_shop.golden_coin": "金币",
+  "item.ex_shop.golden_money_bag": "金钱包",
+  "item.ex_shop.iron_coin": "铁币",
+  "item.ex_shop.iron_money_bag": "铁钱包",
+  "item.ex_shop.leather_money_bag": "皮革钱包",
+  "item.ex_shop.nether_star_coin": "下界星币",
+  "itemGroup.ex_shop_tab": "极墨市场",
+  "tooltip.ex_shop.money_item.value": "§e价值: %s"
+}
