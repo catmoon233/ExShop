@@ -129,8 +129,8 @@ public class MoneyBag extends Item implements ICurioItem {
                     if (!toAdd.isEmpty()) {
                         for (int i = 0; i < handler.getSlots(); i++) {
                             if (handler.getStackInSlot(i).isEmpty()) {
-                                handler.insertItem(i, toAdd, false);
-                                return toAdd.isEmpty(); // 完全插入返回true
+                                handler.insertItem(i, toAdd.copy(), false);
+                                return true;
                             }
                         }
                     }
@@ -146,7 +146,12 @@ public class MoneyBag extends Item implements ICurioItem {
         LivingEntity entity = slotContext.entity();
         extracted(entity, _setval);
     }
-
+    public boolean safeAddItem(ItemStack bagStack, ItemStack toAdd) {
+        if (isFull(bagStack)) {
+            return false;
+        }
+        return tryAddItem(bagStack, toAdd.copy());
+    }
     public static void extracted(LivingEntity entity, ItemStack _setval) {
         entity.getCapability(ExShopVar.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
             capability.money_bag = _setval;

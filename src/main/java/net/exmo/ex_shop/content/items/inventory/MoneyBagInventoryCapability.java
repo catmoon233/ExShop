@@ -2,6 +2,7 @@
 package net.exmo.ex_shop.content.items.inventory;
 
 import net.exmo.ex_shop.content.items.MoneyBag;
+import net.exmo.ex_shop.content.items.MoneyItem;
 import net.exmo.ex_shop.gui.screen.MoneyBagScreen;
 import net.exmo.ex_shop.init.ESItems;
 
@@ -61,17 +62,13 @@ public class MoneyBagInventoryCapability implements ICapabilitySerializable<Comp
 		return new ItemStackHandler(size) {
 			@Override
 			public int getSlotLimit(int slot) {
-				return size;
+				return 100;
 			}
 
 			@Override
 			public boolean isItemValid(int slot, @Nonnull ItemStack stack) {
-				if (stack.getItem() instanceof MoneyBag moneyBag){
-					setSize(moneyBag.slotCount);
-					return true;
-				}
-				return false;
-			}
+                return stack.getItem() instanceof MoneyItem moneyItem;
+            }
 
 			@Override
 			public void setSize(int size) {

@@ -31,7 +31,7 @@ public class MoneyItem extends Item {
             if (first.isPresent()) {
                 ItemStack itemStack = first.get();
                 if (itemStack.getItem() instanceof MoneyBag moneyBag) {
-                    boolean b = moneyBag.tryAddItem(itemStack, stack);
+                    boolean b = moneyBag.safeAddItem(itemStack, stack);
                     if (!b) {
                         return;
                     }
@@ -44,6 +44,7 @@ public class MoneyItem extends Item {
         }
 
     }
+
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag tooltipFlag) {
         super.appendHoverText(stack, level, components, tooltipFlag);
